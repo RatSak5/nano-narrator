@@ -48,7 +48,7 @@ Lucy hugged the bear and said, "I'm sure you should be careful." The bear smiled
 
 ```bash
 python main.py \
-    --train-path data/TinyStories-train.txt \
+    --train-path data/clean_data.txt \
     --vocab-size 8000 \
     --d-emb 384 \
     --heads 6 \
@@ -58,7 +58,6 @@ python main.py \
     --iterations 50000 \
     --warmup-steps 3500 \
     --optimizer adamw \
-    --lr 0.001 \
     --beta2 0.95
 ```
 
@@ -66,7 +65,7 @@ Key arguments:
 
 | Argument | Description | Default |
 |---|---|---|
-| `--train-path` | Path to a plain `.txt` training corpus | `shakespeare.txt` |
+| `--train-path` | Path to a plain `.txt` training corpus | `data/clean_data.txt` |
 | `--vocab-size` | BPE tokenizer vocabulary size | `1000` |
 | `--d-emb` | Embedding dimension | `384` |
 | `--heads` | Number of attention heads | `6` |
