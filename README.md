@@ -75,7 +75,8 @@ Key arguments:
 | `--iterations` | Total training steps | `2000` |
 | `--warmup-steps` | LR warmup steps | `400` |
 
-A tokenizer is trained automatically from the training corpus unless `--tokenizer-path` points to an existing one. Tokenized data is cached as a `.bin` file next to the source `.txt` for reuse.
+### A slight warning
+Takes a lot of time to train unless you have a good GPU. Took me ~10 hrs on an NVIDIA T4 GPU.
 
 ### Generate text
 
