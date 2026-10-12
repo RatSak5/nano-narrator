@@ -7,7 +7,7 @@ from checkpoint import load_checkpoint
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train a tiny Char-level LM on Shakespeare."
+        description="Train a tiny Char-level LM on TinyStories."
     )
     parser.add_argument("--load-path", type=str, default="checkpoints/checkpoint.pt")
     parser.add_argument("--n-tokens", type=int, default=1000)
