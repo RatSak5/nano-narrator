@@ -3,13 +3,7 @@ import torch
 import os
 import numpy as np
  
-from tokenizers import (
-    ByteLevelBPETokenizer,
-    Tokenizer,
-    models,
-    pre_tokenizers,
-    trainers,
-)
+from tokenizers import ByteLevelBPETokenizer
 
 def make_tokenizer_BPE(file_path, vocab_size):
     tok = ByteLevelBPETokenizer()
