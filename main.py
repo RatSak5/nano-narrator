@@ -9,7 +9,7 @@ from optim import *
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train a tiny Char-level LM on Shakespeare."
+        description="Train a tiny Char-level LM on TinyStories."
     )
     parser.add_argument("--iterations", type=int, default=2000)
     parser.add_argument("--batch-size", type=int, default=32)
