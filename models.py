@@ -36,8 +36,6 @@ class EncoderLayer:
         
         return self.out
 
-        return self.out
-
     def parameters(self):
         params = list(self.params)
         for layer in self.sub_layers:
