@@ -34,10 +34,10 @@ Lucy hugged the bear and said, "I'm sure you should be careful." The bear smiled
 ## Usage
 
 ## Before training
-
+- RENAME the `Dataset_chunks` directory to `data`.
 - If your dataset was split into chunk files (e.g. via a splitting script), concatenate them back into a single `.txt` file before training — `main.py` expects one plain-text file as `--train-path`, not a folder of chunks:
   ```bash
-  cat dataset_chunks/*.txt > data/clean_data.txt
+  cat data/*.txt > data/clean_data.txt
   ```
 - Make sure the `checkpoints/` and `tokenizer/` folders exist in the project directory before running `main.py` — the training script saves checkpoints and the trained tokenizer into these folders but does not create them automatically:
   ```bash
