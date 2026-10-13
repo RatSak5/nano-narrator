@@ -36,12 +36,38 @@ Lucy hugged the bear and said, "I'm sure you should be careful." The bear smiled
 ## Before training
 - RENAME the `Dataset_chunks` directory to `data`.
 - If your dataset was split into chunk files (e.g. via a splitting script), concatenate them back into a single `.txt` file before training — `main.py` expects one plain-text file as `--train-path`, not a folder of chunks:
+  
+    **Linux / macOS / Git Bash**
   ```bash
   cat data/*.txt > data/clean_data.txt
   ```
+  
+  **Windows (Command Prompt)**
+  ```bat
+  type data\*.txt > data\clean_data.txt
+  ```
+  
+  **Windows (PowerShell)**
+  ```powershell
+  Get-Content data\*.txt -Encoding utf8 | Set-Content data\clean_data.txt -Encoding utf8
+  ```
+
+
 - Make sure the `checkpoints/` and `tokenizer/` folders exist in the project directory before running `main.py` — the training script saves checkpoints and the trained tokenizer into these folders but does not create them automatically:
+  
+   **Linux / macOS / Git Bash**
   ```bash
   mkdir -p checkpoints tokenizer
+  ```
+  
+   **Windows (Command Prompt)**
+  ```bat
+  mkdir checkpoints tokenizer
+  ```
+  
+   **Windows (PowerShell)**
+  ```powershell
+  New-Item -ItemType Directory -Force checkpoints, tokenizer
   ```
 
 ### Train a model
