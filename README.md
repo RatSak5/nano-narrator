@@ -126,6 +126,7 @@ python generate.py \
 
 - [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories) dataset by Ronen Eldan and Yuanzhi Li (Microsoft Research)
 - Architecture and training approach inspired by [nanoGPT](https://github.com/karpathy/nanoGPT) and the original ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) paper
+- Optim file along with positional encoding has been coded on the basis of the book "Deep Learning Through the Prism of Tensors"
 
 ## License
 
